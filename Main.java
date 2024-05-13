@@ -1,17 +1,14 @@
-package Question_number_3;
+package Question_Number_4;
 
-public class Main
-{
+public class Main {
     public static void main(String[] args) {
+        bubleSort bubblesort = new bubleSort();
+        char[] alphabets = {'d', 'b', 'a', 'c', 'e','a'};
+        bubblesort.bubbleSort(alphabets);
 
-        QueueUsingStacks queue = new QueueUsingStacks();
-        queue.enqueue(10);
-        queue.enqueue(20);
-        queue.enqueue(30);
-
-        System.out.println("Dequeued element: " + queue.dequeue());
-        System.out.println("Peeked element: " + queue.peek());
-
+        System.out.print("Ordered: ");
+        for (char ch : alphabets) {
+            System.out.print(ch + " ");
+        }
     }
-
 }
