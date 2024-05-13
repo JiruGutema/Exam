@@ -1,5 +1,4 @@
-package Question_Number_2;
-
+package Question_number_3;
 public class Stack {
     int[] numArray;
     int top;
@@ -55,7 +54,7 @@ public class Stack {
     }
 
     public static void main(String[] args) {
-        Stack numbers = new Stack(4);
+        Question_Number_2.Stack numbers = new Question_Number_2.Stack(4);
         numbers.push(0);
         numbers.push(1);
         numbers.push(2);
@@ -71,7 +70,7 @@ public class Stack {
 
     public static boolean palindromeChecker(String str) {
 
-        Stack letters = new Stack(str.length());
+        Question_Number_2.Stack letters = new Question_Number_2.Stack(str.length());
         for (char c : str.toCharArray()) {
             letters.push(c);
         }
